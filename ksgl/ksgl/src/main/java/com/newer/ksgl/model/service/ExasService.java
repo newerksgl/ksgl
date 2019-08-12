@@ -20,4 +20,8 @@ public interface ExasService {
     public void updateById(Long sid, Long qid, Exas e);
     //添加数据
     public void add(Long sid, Long qid, Exas e);
+    //多样查询分页
+    public List<Exas> find(Exas exas,Integer rows,Integer pageSize);
+    //查询总数据行数
+    public Integer findRowCount( Exas exas);
 }

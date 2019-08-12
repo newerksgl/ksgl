@@ -25,6 +25,19 @@ public class ExasController {
     }
 
     @ResponseBody
+    @RequestMapping("/find")
+    public List<Exas> find(Exas exas,Integer row,Integer pageSize){
+        List<Exas> exasList = service.find(exas,row,pageSize);
+        return exasList;
+    }
+
+    @ResponseBody
+    @RequestMapping("/findRowCount")
+    public Integer findRowCount(Exas exas){
+        return service.findRowCount(exas);
+    }
+
+    @ResponseBody
     @RequestMapping("/findById")
     public Exas findById(Long id){
         Exas e = service.findById(id);

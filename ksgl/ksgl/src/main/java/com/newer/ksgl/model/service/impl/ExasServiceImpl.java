@@ -38,4 +38,14 @@ public class ExasServiceImpl implements ExasService {
     public void add(Long sid, Long qid, Exas e) {
         mapper.add(sid,qid,e);
     }
+
+    @Override
+    public List<Exas> find(Exas exas, Integer rows, Integer pageSize) {
+        return mapper.find(exas,rows,pageSize);
+    }
+
+    @Override
+    public Integer findRowCount(Exas exas) {
+        return mapper.findRowCount(exas);
+    }
 }

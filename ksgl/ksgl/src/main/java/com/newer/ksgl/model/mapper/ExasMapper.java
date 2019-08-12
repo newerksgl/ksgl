@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 @Mapper
-public interface ExasMapper {
+public interface ExasMapper extends ExasMapperImpl {
     //查询所有Exas表的数据
     @Select("select * from Exas")
     public List<Exas> findAll();

@@ -27,6 +27,18 @@ public class CurriculumstypesController {
     }
 
     @ResponseBody
+    @RequestMapping("/find")
+    public List<Curriculumstypes> find(Curriculumstypes c,Integer row,Integer pageSize){
+        return service.find(c,row,pageSize);
+    }
+
+    @ResponseBody
+    @RequestMapping("/findRowCount")
+    public Integer findRowCount(Curriculumstypes c){
+        return service.findRowCount(c);
+    }
+
+    @ResponseBody
     @RequestMapping("/findById")
     public Curriculumstypes findById(Long id){
         return service.findById(id);
