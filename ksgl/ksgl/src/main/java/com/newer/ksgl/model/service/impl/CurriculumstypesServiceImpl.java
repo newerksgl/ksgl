@@ -38,4 +38,14 @@ public class CurriculumstypesServiceImpl implements CurriculumstypesService {
     public void deleteById(Long id) {
         mapper.deleteById(id);
     }
+
+    @Override
+    public List<Curriculumstypes> find(Curriculumstypes c, Integer row, Integer pageSize) {
+        return mapper.find(c,row,pageSize);
+    }
+
+    @Override
+    public Integer findRowCount(Curriculumstypes c) {
+        return mapper.findRowCount(c);
+    }
 }

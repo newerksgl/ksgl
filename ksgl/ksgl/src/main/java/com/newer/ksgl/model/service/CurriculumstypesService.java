@@ -21,4 +21,10 @@ public interface CurriculumstypesService {
 
     //根据id删除
     public void deleteById(Long id);
+
+    //多样查询分页
+    public List<Curriculumstypes> find(Curriculumstypes c,Integer row,Integer pageSize);
+
+    //查询总数据
+    public Integer findRowCount(Curriculumstypes c);
 }
