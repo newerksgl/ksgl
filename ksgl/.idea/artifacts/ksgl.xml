@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ksgl">
+    <output-path>$PROJECT_DIR$/out/artifacts/ksgl</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ksgl/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ksgl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
