@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bac8bae-7f15-4974-ad08-c49e48f4b72a" name="Default Changelist" comment="" />
+    <list default="true" id="0bac8bae-7f15-4974-ad08-c49e48f4b72a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ExasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ExasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ksgl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ksgl/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/ksgl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,14 +47,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/ModelApplication.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ExasController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/QuestionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding>
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UserroleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/UsersMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UsersController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/PrivacyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +199,6 @@
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Ccertificatestatus.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Achievement.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/ksgl/pom.xml" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/util/PageBean.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/PagingMapper.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/service/UsersService.java" />
@@ -117,11 +219,16 @@
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UserroleController.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/PrivacyController.java" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/service/impl/RegionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java" />
-        <option value="$PROJECT_DIR$/ksgl/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Subject.java" />
-        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java" />
         <option value="$PROJECT_DIR$/ksgl/src/test/java/com/newer/ksgl/model/ModelApplicationTests.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ksgl/pom.xml" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ExasController.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/QuestionController.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java" />
+        <option value="$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java" />
       </list>
     </option>
   </component>
@@ -148,11 +255,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
-    <option name="y" value="41" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1115" />
+    <option name="y" value="135" />
+    <option name="width" value="784" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -160,7 +267,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
@@ -177,6 +345,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -197,6 +366,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.newer.ksgl.model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.newer.ksgl.model.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntelliJ IDEA workspace\ksgl\ksgl\src\main\java\com\newer\ksgl\model\controller" />
@@ -220,8 +392,9 @@
   </component>
   <component name="RunManager">
     <configuration name="ModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ksgl" />
+      <module name="model" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.newer.ksgl.model.ModelApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,7 +423,7 @@
       <workItem from="1565580696778" duration="406000" />
       <workItem from="1565593568053" duration="592000" />
       <workItem from="1565596378912" duration="1759000" />
-      <workItem from="1565600047144" duration="635000" />
+      <workItem from="1565600047144" duration="3839000" />
     </task>
     <servers />
   </component>
@@ -287,12 +460,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52976000" />
+    <option name="totallyTimeSpent" value="56180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24731903" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24731903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -302,7 +475,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49807197" weight="0.25033647" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49807197" visible="true" weight="0.24929178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,7 +493,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.18230563" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3756906" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32969153" />
@@ -337,20 +510,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改了test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Exas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Examinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/pojo/Errors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -412,13 +571,6 @@
     <entry file="file://$PROJECT_DIR$/ksgl/mvnw.cmd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4107" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/util/PageBean.java">
@@ -642,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UserroleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/service/PrivacyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -659,20 +801,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -686,30 +814,10 @@
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/service/ChapterTestService.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/PrivacyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/ChapterTestMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/UsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,37 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/SubjectMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -791,21 +872,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ksgl/ksgl.iml" />
     <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/ModelApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ChapterTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/mapper/UsersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/CurriculumstypesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/PrivacyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/ExasController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/RegionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/SubjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UserroleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksgl/src/main/java/com/newer/ksgl/model/controller/UsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

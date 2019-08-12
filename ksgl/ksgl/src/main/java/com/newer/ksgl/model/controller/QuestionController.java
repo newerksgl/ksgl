@@ -15,18 +15,21 @@ public class QuestionController {
     @Autowired
     private QuestionService service;
 
+    //查询所有数据入口
     @ResponseBody
     @RequestMapping("/findAll")
     public List<Question> findAll(){
         return service.findAll();
     }
 
+    //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
     public Question findById(Long id){
         return service.finById(id);
     }
 
+    //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
     public Integer add(Question question){
@@ -38,6 +41,7 @@ public class QuestionController {
         return 1;
     }
 
+    //根据id删除数据入口
     @ResponseBody
     @RequestMapping("/del")
     public Integer del(Long id){
@@ -48,6 +52,8 @@ public class QuestionController {
         }
         return 1;
     }
+
+    //通过id修改数据入口
     @ResponseBody
     @RequestMapping("/update")
     public Integer update(Question question){

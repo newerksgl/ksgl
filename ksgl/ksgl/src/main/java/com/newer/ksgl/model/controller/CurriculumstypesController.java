@@ -2,6 +2,7 @@ package com.newer.ksgl.model.controller;
 
 import com.newer.ksgl.model.pojo.Curriculumstypes;
 import com.newer.ksgl.model.service.CurriculumstypesService;
+import com.newer.ksgl.model.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,30 +21,43 @@ public class CurriculumstypesController {
     @Autowired
     private CurriculumstypesService service;
 
+    //查询所有数据入口
     @ResponseBody
     @RequestMapping("/findAll")
     public List<Curriculumstypes> findAll(){
         return service.findAll();
     }
 
+    //多样查询数据分页入口
     @ResponseBody
     @RequestMapping("/find")
-    public List<Curriculumstypes> find(Curriculumstypes c,Integer row,Integer pageSize){
-        return service.find(c,row,pageSize);
+    public PageBean<Curriculumstypes> find( Curriculumstypes c, Integer pageNo){
+        Integer pageSize = 1;
+        String tableName = "Curriculumstypes";
+
+        PageBean<Curriculumstypes> pageBean = new PageBean<>();
+
+        Integer pageno = 1;
+
+        if(pageNo!=null && pageNo>0){
+            pageno = pageNo;
+        }
+
+        pageBean.setData(service.find(c,pageno, pageSize));
+        pageBean.setPageNo(pageno);
+        pageBean.setPageSize(pageSize);
+        pageBean.setTotal(service.findRowCount(c));
+        return pageBean;
     }
 
-    @ResponseBody
-    @RequestMapping("/findRowCount")
-    public Integer findRowCount(Curriculumstypes c){
-        return service.findRowCount(c);
-    }
-
+    //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
     public Curriculumstypes findById(Long id){
         return service.findById(id);
     }
 
+    //根据id删除数据入口
     @ResponseBody
     @RequestMapping("/del")
     public Integer del(Long id){
@@ -55,6 +69,7 @@ public class CurriculumstypesController {
         return 1;
     }
 
+    //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
     public Integer add(HttpServletRequest request,@RequestParam("image") MultipartFile file){

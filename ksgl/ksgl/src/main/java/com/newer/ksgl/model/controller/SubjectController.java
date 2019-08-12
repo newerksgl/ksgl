@@ -32,18 +32,21 @@ public class SubjectController {
     @Autowired
     private SubjectService service;
 
+    //查询所有数据入口
     @ResponseBody
     @RequestMapping("/findAll")
     public List<Subject> findAll() {
         return service.findAll();
     }
 
+    //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
     public Subject findAll(Long id) {
         return service.findById(id);
     }
 
+    //写入文件入口 by谢涛
     @ResponseBody
     @PostMapping("/singlefile")
     public void singleFileUpload(MultipartFile file, HttpServletRequest request) {
@@ -62,6 +65,7 @@ public class SubjectController {
         Image = file.getOriginalFilename();
     }
 
+    //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
     public Integer add(HttpServletRequest request, @RequestParam("image") MultipartFile file) {
@@ -82,7 +86,7 @@ public class SubjectController {
 
             subject.setImage("http://"+address.getHostAddress()+":9999/image/"+file.getOriginalFilename());
             System.out.println(subject);
-//            service.add(subject);
+            service.add(subject);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -90,6 +94,7 @@ public class SubjectController {
         return 1;
     }
 
+    //根据id删除数据入口
     @ResponseBody
     @RequestMapping("/del")
     public Integer del(Long id) {
@@ -101,10 +106,26 @@ public class SubjectController {
         return 1;
     }
 
+    //通过id修改数据入口
     @ResponseBody
     @RequestMapping("/update")
-    public Integer update(Subject subject) {
+    public Integer update(HttpServletRequest request, @RequestParam("image") MultipartFile file) {
         try {
+            byte[] bytes = file.getBytes();
+            Path path = Paths.get("ksgl/src/main/resources/static/image", file.getOriginalFilename());
+            //如果没有files文件夹，则创建
+            if (!Files.isWritable(path)) {
+                Files.createDirectories(Paths.get("ksgl/src/main/resources/static/image"));
+            }
+            //文件写入指定路径
+            Files.write(path, bytes);
+
+            Subject subject = new Subject();
+            subject.setName(request.getParameter("name"));
+
+            InetAddress address = InetAddress.getLocalHost();
+
+            subject.setImage("http://"+address.getHostAddress()+":9999/image/"+file.getOriginalFilename());
             service.updateById(subject);
         } catch (Exception e) {
             return 0;

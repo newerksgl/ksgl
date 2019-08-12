@@ -1,14 +1,13 @@
 package com.newer.ksgl.model.controller;
 
 import com.newer.ksgl.model.pojo.Exas;
-import com.newer.ksgl.model.pojo.Subject;
 import com.newer.ksgl.model.service.ExasService;
+import com.newer.ksgl.model.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -17,6 +16,7 @@ public class ExasController {
     @Autowired
     private ExasService service;
 
+    //查询所有数据入口
     @ResponseBody
     @RequestMapping("/findAll")
     public List<Exas> findAll(){
@@ -24,25 +24,37 @@ public class ExasController {
         return exasList;
     }
 
+    //多样查询分页入口
     @ResponseBody
     @RequestMapping("/find")
-    public List<Exas> find(Exas exas,Integer row,Integer pageSize){
-        List<Exas> exasList = service.find(exas,row,pageSize);
-        return exasList;
+    public PageBean<Exas> find(Exas exas, Integer pageNo){
+        Integer pageSize = 1;
+        String tableName = "Curriculumstypes";
+
+        PageBean<Exas> pageBean = new PageBean<>();
+
+        Integer pageno = 1;
+
+        if(pageNo!=null && pageNo>0){
+            pageno = pageNo;
+        }
+
+        pageBean.setData(service.find(exas,pageno, pageSize));
+        pageBean.setPageNo(pageno);
+        pageBean.setPageSize(pageSize);
+        pageBean.setTotal(service.findRowCount(exas));
+        return pageBean;
     }
 
-    @ResponseBody
-    @RequestMapping("/findRowCount")
-    public Integer findRowCount(Exas exas){
-        return service.findRowCount(exas);
-    }
-
+    //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
     public Exas findById(Long id){
         Exas e = service.findById(id);
         return e;
     }
+
+    //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
     public Integer add(Exas exas){
@@ -53,6 +65,8 @@ public class ExasController {
         }
         return 1;
     }
+
+    //根据id删除数据入口
     @ResponseBody
     @RequestMapping("/del")
     public Integer del(Long id){
@@ -64,6 +78,7 @@ public class ExasController {
         return 1;
     }
 
+    //通过id修改数据入口
     @ResponseBody
     @RequestMapping("/update")
     public Integer update(Exas exas){

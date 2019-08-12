@@ -15,18 +15,21 @@ public class RegionController {
     @Autowired
     private RegionService service;
 
+    //查询所有数据入口
     @ResponseBody
     @RequestMapping("/findAll")
     public List<Region> findAll(){
         return service.findAll();
     }
 
+    //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
     public Region findById(Long id){
         return service.findById(id);
     }
 
+    //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
     public Integer add(Region region){
@@ -38,6 +41,7 @@ public class RegionController {
         return 1;
     }
 
+    //根据id删除数据入口
     @ResponseBody
     @RequestMapping("/del")
     public Integer del(Long id){
@@ -49,6 +53,7 @@ public class RegionController {
         return 1;
     }
 
+    //通过id修改数据入口
     @ResponseBody
     @RequestMapping("/update")
     public Integer update(Region region){
