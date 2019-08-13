@@ -15,8 +15,8 @@ public class ModelApplicationTests {
     @Test
     public void contextLoads() {
         testUsersService.test_findAll();
+
         System.out.println(1);
-        
     }
 
 }
