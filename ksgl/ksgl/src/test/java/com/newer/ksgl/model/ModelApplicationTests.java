@@ -15,7 +15,8 @@ public class ModelApplicationTests {
     @Test
     public void contextLoads() {
         testUsersService.test_findAll();
-        System.out.println("修改了test");
+        System.out.println(1);
+        System.out.println(2);
     }
 
 }
