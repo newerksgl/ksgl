@@ -1,6 +1,6 @@
 package com.newer.ksgl.model.service.impl;
 
-import com.newer.ksgl.model.mapper.CcertificatestatusMapper;
+import com.newer.ksgl.model.mapper.CcertificateStatusMapper;
 import com.newer.ksgl.model.pojo.Ccertificatestatus;
 import com.newer.ksgl.model.service.CcertificatestatusService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 public class CcertificatestatusServiceImpl implements CcertificatestatusService {
 
     @Autowired
-    private CcertificatestatusMapper mapper;
+    private CcertificateStatusMapper mapper;
 
 
     @Override
