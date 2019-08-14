@@ -29,7 +29,7 @@ public class ExasController {
     @RequestMapping("/find")
     public PageBean<Exas> find(Exas exas, Integer pageNo){
         Integer pageSize = 1;
-        String tableName = "Curriculumstypes";
+        String tableName = "Exas";
 
         PageBean<Exas> pageBean = new PageBean<>();
 
@@ -38,8 +38,8 @@ public class ExasController {
         if(pageNo!=null && pageNo>0){
             pageno = pageNo;
         }
-
-        pageBean.setData(service.find(exas,pageno, pageSize));
+        int row = (pageno-1)*pageSize;
+        pageBean.setData(service.find(exas,row, pageSize));
         pageBean.setPageNo(pageno);
         pageBean.setPageSize(pageSize);
         pageBean.setTotal(service.findRowCount(exas));

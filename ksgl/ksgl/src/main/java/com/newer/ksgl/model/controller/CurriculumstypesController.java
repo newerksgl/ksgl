@@ -42,8 +42,8 @@ public class CurriculumstypesController {
         if(pageNo!=null && pageNo>0){
             pageno = pageNo;
         }
-
-        pageBean.setData(service.find(c,pageno, pageSize));
+        int row = (pageno-1)*pageSize;
+        pageBean.setData(service.find(c,row, pageSize));
         pageBean.setPageNo(pageno);
         pageBean.setPageSize(pageSize);
         pageBean.setTotal(service.findRowCount(c));
