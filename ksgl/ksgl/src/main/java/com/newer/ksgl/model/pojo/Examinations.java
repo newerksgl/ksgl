@@ -7,7 +7,7 @@ public class Examinations {
   private long sid;
   private long reid;
   private long number;
-  private String stateTest;
+  private String statetest;
   private String name;
 
 
@@ -48,11 +48,11 @@ public class Examinations {
 
 
   public String getStateTest() {
-    return stateTest;
+    return statetest;
   }
 
   public void setStateTest(String stateTest) {
-    this.stateTest = stateTest;
+    this.statetest = stateTest;
   }
 
 
