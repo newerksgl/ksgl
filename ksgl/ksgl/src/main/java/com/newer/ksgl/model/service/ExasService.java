@@ -15,7 +15,7 @@ public interface ExasService {
     //根据id删除
     public void deleteById(Long id);
     //根据id查询
-    public Exas findById(Long id);
+    public Exas getExasById(Long id);
     //通过id修改数据
     public void updateById(Long sid, Long qid, Exas e);
     //添加数据

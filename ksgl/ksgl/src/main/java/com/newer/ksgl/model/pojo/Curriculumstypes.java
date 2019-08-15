@@ -2,28 +2,28 @@ package com.newer.ksgl.model.pojo;
 
 public class Curriculumstypes {
 
-  private long id;
-  private long ctid;
+  private Long id;
+  private Long ctid;
   private String title;
   private String image;
   private String address;
   private String introduce;
 
 
-  public long getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
 
-  public long getCtid() {
+  public Long getCtid() {
     return ctid;
   }
 
-  public void setCtid(long ctid) {
+  public void setCtid(Long ctid) {
     this.ctid = ctid;
   }
 

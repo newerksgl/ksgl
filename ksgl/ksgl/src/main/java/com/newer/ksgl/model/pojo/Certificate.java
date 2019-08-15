@@ -2,7 +2,7 @@ package com.newer.ksgl.model.pojo;
 
 public class Certificate {
 
-  private long cid;
+  private Long cid;
   private String thumbnail;
   private String title;
   private double price;
@@ -10,11 +10,11 @@ public class Certificate {
   private String brief;
 
 
-  public long getCid() {
+  public Long getCid() {
     return cid;
   }
 
-  public void setCid(long cid) {
+  public void setCid(Long cid) {
     this.cid = cid;
   }
 

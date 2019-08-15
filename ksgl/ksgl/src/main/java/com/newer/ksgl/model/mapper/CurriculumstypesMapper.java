@@ -14,7 +14,7 @@ public interface CurriculumstypesMapper extends CurriculumstypesMapperImpl {
 
     //根据id查询
     @Select("select * from curriculumstypes where id = #{id}")
-    public Curriculumstypes findById(Long id);
+    public Curriculumstypes getCurriculumstypesById(Long id);
 
     //添加数据
     @Insert("inser into curriculumstypes(ctid,title,image,address,introduce) values(#{ctid},#{title},#{image},#{address},#{introduce})")

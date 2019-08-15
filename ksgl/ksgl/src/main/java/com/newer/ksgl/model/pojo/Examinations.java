@@ -3,46 +3,46 @@ package com.newer.ksgl.model.pojo;
 
 public class Examinations {
 
-  private long id;
-  private long sid;
-  private long reid;
-  private long number;
+  private Long id;
+  private Long sid;
+  private Long reid;
+  private Long number;
   private String statetest;
   private String name;
 
 
-  public long getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
 
-  public long getSid() {
+  public Long getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Long sid) {
     this.sid = sid;
   }
 
 
-  public long getReid() {
+  public Long getReid() {
     return reid;
   }
 
-  public void setReid(long reid) {
+  public void setReid(Long reid) {
     this.reid = reid;
   }
 
 
-  public long getNumber() {
+  public Long getNumber() {
     return number;
   }
 
-  public void setNumber(long number) {
+  public void setNumber(Long number) {
     this.number = number;
   }
 

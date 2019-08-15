@@ -3,19 +3,19 @@ package com.newer.ksgl.model.pojo;
 
 public class Errors {
 
-  private long eid;
+  private Long eid;
   private String cntent;
-  private long userId;
+  private Long userId;
   private java.sql.Timestamp feedBackTime;
-  private long conductorD;
+  private Long conductorD;
   private java.sql.Timestamp conductorTime;
 
 
-  public long getEid() {
+  public Long getEid() {
     return eid;
   }
 
-  public void setEid(long eid) {
+  public void setEid(Long eid) {
     this.eid = eid;
   }
 
@@ -29,11 +29,11 @@ public class Errors {
   }
 
 
-  public long getUserId() {
+  public Long getUserId() {
     return userId;
   }
 
-  public void setUserId(long userId) {
+  public void setUserId(Long userId) {
     this.userId = userId;
   }
 
@@ -47,11 +47,11 @@ public class Errors {
   }
 
 
-  public long getConductorD() {
+  public Long getConductorD() {
     return conductorD;
   }
 
-  public void setConductorD(long conductorD) {
+  public void setConductorD(Long conductorD) {
     this.conductorD = conductorD;
   }
 

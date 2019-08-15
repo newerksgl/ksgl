@@ -19,8 +19,8 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public Subject findById(Long id) {
-        return mapper.findById(id);
+    public Subject getSubjectById(Long id) {
+        return mapper.getSubjectById(id);
     }
 
     @Override

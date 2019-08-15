@@ -39,10 +39,10 @@ public class TestUsersService {
         users.setName("ceshi");
         users.setEmail("ceshi@163.com");
         users.setUsers_ip(ip);
-        users.setIntegral(0);
+        users.setIntegral(0l);
         users.setRegister(datetime);
         users.setPassword("ceshi");
-        users.setRid(2);
+        users.setRid(2l);
         Integer row = service.insert(users);
         System.out.println(row);
     }

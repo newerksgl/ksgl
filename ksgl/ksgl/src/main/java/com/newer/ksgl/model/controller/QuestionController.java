@@ -26,7 +26,7 @@ public class QuestionController {
     @ResponseBody
     @RequestMapping("/findById")
     public Question findById(Long id){
-        return service.finById(id);
+        return service.getQuestionById(id);
     }
 
     //添加数据入口

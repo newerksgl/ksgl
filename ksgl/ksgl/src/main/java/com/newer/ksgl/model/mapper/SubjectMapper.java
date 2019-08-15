@@ -14,7 +14,7 @@ public interface SubjectMapper {
 
     //根据id查询
     @Select("select * from subject where sid = #{id}")
-    public Subject findById(Long id);
+    public Subject getSubjectById(Long id);
 
     //添加数据
     @Insert("insert into subject(name,image) values(#{name},#{image})")

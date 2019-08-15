@@ -19,7 +19,7 @@ public interface ExasMapper extends ExasMapperImpl {
 
     //通过id查找数据
     @Select("select * from exas where eid = #{id}")
-    public Exas findById(@Param("id") Long id);
+    public Exas getExasById(@Param("id") Long id);
 
     //通过id进行修改
     @Update("update exas set SID=#{sid},QID=#{qid},Quetion_Stem=#{e.questionStem},Reference=#{e.reference},Problem=#{e.problem},Difficulty=#{e.difficulty} where eid=#{e.eid}")

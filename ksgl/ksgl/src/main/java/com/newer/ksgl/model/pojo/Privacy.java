@@ -3,19 +3,19 @@ package com.newer.ksgl.model.pojo;
 
 public class Privacy {
 
-  private long pri_id;
+  private Long pri_id;
   private String head;
   private String realname;
   private String idnumber;
   private String phone;
-  private long sex;
+  private Long sex;
   private String culture;
   private String address;
 
   public Privacy() {
   }
 
-  public Privacy(long pri_id, String head, String realname, String idnumber, String phone, long sex, String culture, String address) {
+  public Privacy(Long pri_id, String head, String realname, String idnumber, String phone, Long sex, String culture, String address) {
     this.pri_id = pri_id;
     this.head = head;
     this.realname = realname;
@@ -26,11 +26,11 @@ public class Privacy {
     this.address = address;
   }
 
-  public long getPri_id() {
+  public Long getPri_id() {
     return pri_id;
   }
 
-  public void setPri_id(long pri_id) {
+  public void setPri_id(Long pri_id) {
     this.pri_id = pri_id;
   }
 
@@ -66,11 +66,11 @@ public class Privacy {
     this.phone = phone;
   }
 
-  public long getSex() {
+  public Long getSex() {
     return sex;
   }
 
-  public void setSex(long sex) {
+  public void setSex(Long sex) {
     this.sex = sex;
   }
 

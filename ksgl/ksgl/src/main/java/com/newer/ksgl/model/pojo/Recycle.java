@@ -3,28 +3,28 @@ package com.newer.ksgl.model.pojo;
 
 public class Recycle {
 
-  private long rid;
-  private long type;
+  private Long rid;
+  private Long type;
   private String content;
   private String name;
   private java.sql.Timestamp time;
   private String diffculty;
 
 
-  public long getRid() {
+  public Long getRid() {
     return rid;
   }
 
-  public void setRid(long rid) {
+  public void setRid(Long rid) {
     this.rid = rid;
   }
 
 
-  public long getType() {
+  public Long getType() {
     return type;
   }
 
-  public void setType(long type) {
+  public void setType(Long type) {
     this.type = type;
   }
 

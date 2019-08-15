@@ -42,8 +42,8 @@ public class SubjectController {
     //根据id查询数据入口
     @ResponseBody
     @RequestMapping("/findById")
-    public Subject findAll(Long id) {
-        return service.findById(id);
+    public Subject findById(Long id) {
+        return service.getSubjectById(id);
     }
 
     //写入文件入口 by谢涛

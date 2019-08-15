@@ -2,16 +2,16 @@ package com.newer.ksgl.model.pojo;
 
 public class Chaptertest {
 
-  private long ctid;
+  private Long ctid;
   private String catalog;
-  private long sid;
+  private Long sid;
 
 
-  public long getCtid() {
+  public Long getCtid() {
     return ctid;
   }
 
-  public void setCtid(long ctid) {
+  public void setCtid(Long ctid) {
     this.ctid = ctid;
   }
 
@@ -25,11 +25,11 @@ public class Chaptertest {
   }
 
 
-  public long getSid() {
+  public Long getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Long sid) {
     this.sid = sid;
   }
 

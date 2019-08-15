@@ -11,7 +11,7 @@ public interface CurriculumstypesService {
     public List<Curriculumstypes> findAll();
 
     //根据id查询
-    public Curriculumstypes findById(Long id);
+    public Curriculumstypes getCurriculumstypesById(Long id);
 
     //添加数据
     public void add(Curriculumstypes curriculumstypes);

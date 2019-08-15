@@ -2,27 +2,27 @@ package com.newer.ksgl.model.pojo;
 
 public class Achievement {
 
-  private long aid;
-  private long pid;
+  private Long aid;
+  private Long pid;
   private String name;
-  private long fraction;
+  private Long fraction;
   private String pName;
 
 
-  public long getAid() {
+  public Long getAid() {
     return aid;
   }
 
-  public void setAid(long aid) {
+  public void setAid(Long aid) {
     this.aid = aid;
   }
 
 
-  public long getPid() {
+  public Long getPid() {
     return pid;
   }
 
-  public void setPid(long pid) {
+  public void setPid(Long pid) {
     this.pid = pid;
   }
 
@@ -36,11 +36,11 @@ public class Achievement {
   }
 
 
-  public long getFraction() {
+  public Long getFraction() {
     return fraction;
   }
 
-  public void setFraction(long fraction) {
+  public void setFraction(Long fraction) {
     this.fraction = fraction;
   }
 

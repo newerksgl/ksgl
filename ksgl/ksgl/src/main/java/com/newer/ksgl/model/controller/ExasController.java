@@ -50,7 +50,7 @@ public class ExasController {
     @ResponseBody
     @RequestMapping("/findById")
     public Exas findById(Long id){
-        Exas e = service.findById(id);
+        Exas e = service.getExasById(id);
         return e;
     }
 
