@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 @Mapper
-public interface ExaminationsMapper {
+public interface ExaminationsMapper extends ExaminationsMapperImpl {
     //查询所有
     @Select("select * from examinations")
     public List<Examinations> findAll();
