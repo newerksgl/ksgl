@@ -25,8 +25,8 @@ public class ChapterTestController {
     //根据id查询入口
     @ResponseBody
     @RequestMapping("/findById")
-    public Chaptertest findById(Long id){
-        return service.findById(id);
+    public Chaptertest getChapterTestById(Long id){
+        return service.getChapterTestById(id);
     }
 
     //添加数据入口

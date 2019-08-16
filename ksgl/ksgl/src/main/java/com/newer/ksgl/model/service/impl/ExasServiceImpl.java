@@ -25,8 +25,8 @@ public class ExasServiceImpl implements ExasService {
     }
 
     @Override
-    public Exas findById(Long id) {
-        return mapper.findById(id);
+    public Exas getExasById(Long id) {
+        return mapper.getExasById(id);
     }
 
     @Override

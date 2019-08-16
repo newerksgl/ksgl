@@ -19,8 +19,8 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public Question finById(Long id) {
-        return mapper.finById(id);
+    public Question getQuestionById(Long id) {
+        return mapper.getQuestionById(id);
     }
 
     @Override

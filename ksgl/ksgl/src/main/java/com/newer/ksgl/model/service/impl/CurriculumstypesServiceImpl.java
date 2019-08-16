@@ -20,8 +20,8 @@ public class CurriculumstypesServiceImpl implements CurriculumstypesService {
     }
 
     @Override
-    public Curriculumstypes findById(Long id) {
-        return mapper.findById(id);
+    public Curriculumstypes getCurriculumstypesById(Long id) {
+        return mapper.getCurriculumstypesById(id);
     }
 
     @Override

@@ -11,7 +11,7 @@ public interface SubjectService {
     public List<Subject> findAll();
 
     //根据id查询
-    public Subject findById(Long id);
+    public Subject getSubjectById(Long id);
 
     //添加数据
     public void add(Subject subject);

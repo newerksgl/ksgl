@@ -3,16 +3,16 @@ package com.newer.ksgl.model.pojo;
 
 public class Region {
 
-  private long reid;
+  private Long reid;
   private String name;
-  private long areaCode;
+  private Long areaCode;
 
 
-  public long getReid() {
+  public Long getReid() {
     return reid;
   }
 
-  public void setReid(long reid) {
+  public void setReid(Long reid) {
     this.reid = reid;
   }
 
@@ -26,11 +26,11 @@ public class Region {
   }
 
 
-  public long getAreaCode() {
+  public Long getAreaCode() {
     return areaCode;
   }
 
-  public void setAreaCode(long areaCode) {
+  public void setAreaCode(Long areaCode) {
     this.areaCode = areaCode;
   }
 

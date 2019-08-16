@@ -2,30 +2,30 @@ package com.newer.ksgl.model.pojo;
 
 public class Exas {
 
-  private long sid;
-  private long qid;
+  private Long sid;
+  private Long qid;
   private String questionStem;
   private String reference;
   private String problem;
   private String difficulty;
-  private long eid;
+  private Long eid;
   private String date;
 
 
-  public long getSid() {
+  public Long getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Long sid) {
     this.sid = sid;
   }
 
 
-  public long getQid() {
+  public Long getQid() {
     return qid;
   }
 
-  public void setQid(long qid) {
+  public void setQid(Long qid) {
     this.qid = qid;
   }
 
@@ -66,11 +66,11 @@ public class Exas {
   }
 
 
-  public long getEid() {
+  public Long getEid() {
     return eid;
   }
 
-  public void setEid(long eid) {
+  public void setEid(Long eid) {
     this.eid = eid;
   }
 

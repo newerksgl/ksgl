@@ -54,7 +54,7 @@ public class UsersController {
         users.setUsers_ip(ip);
         users.setRegister(datetime);
         users.setPassword(pass);
-        users.setRid(2);
+        users.setRid(2l);
         Integer row = usersService.insert(users);
         return row;
     }

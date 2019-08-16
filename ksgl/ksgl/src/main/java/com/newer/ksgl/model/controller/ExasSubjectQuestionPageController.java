@@ -25,7 +25,7 @@ public class ExasSubjectQuestionPageController {
         Integer pageSize = 1;
         String tableName = "ExasSubjectQuestionPage";
         PageBean<ExasSubjectQuestionPage> pageBean = new PageBean<>();
-
+        page=new ExasSubjectQuestionPage();
         Integer pageno = 1;
         Subject s = new Subject();
         s.setName(request.getParameter("name"));
@@ -34,11 +34,23 @@ public class ExasSubjectQuestionPageController {
         q.setQuestionTest(request.getParameter("questiontest"));
         page.setS(s);
         page.setQ(q);
+        page.setReference(request.getParameter("reference"));
+        page.setDifficulty(request.getParameter("difficulty"));
+        page.setQuestionStem(request.getParameter("questionstem"));
+        page.setProblem(request.getParameter("problem"));
+        page.setDate(request.getParameter("date"));
+        try {
+            page.setSid(Long.valueOf(request.getParameter("sid")));
+        }catch (NumberFormatException e){}
+        try {
+            page.setQid(Long.valueOf(request.getParameter("qid")));
+        }catch (NumberFormatException e){}
+        System.out.println(page.getDate());
         if(pageNo!=null && pageNo>0){
             pageno = pageNo;
         }
         int row = (pageno-1)*pageSize;
-        pageBean.setData(service.find(page,row, pageSize));
+        pageBean.setData(service.find(page,row,pageSize));
         pageBean.setPageNo(pageno);
         pageBean.setPageSize(pageSize);
         pageBean.setTotal(service.findRowCount(page));

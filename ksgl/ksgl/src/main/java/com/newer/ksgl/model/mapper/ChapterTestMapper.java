@@ -13,7 +13,7 @@ public interface ChapterTestMapper {
 
     //根据id查询
     @Select("select * from chapterTest where ctid = #{id}")
-    public Chaptertest findById(Long id);
+    public Chaptertest getChapterTestById(Long id);
 
     //添加数据
     @Insert("insert into chaptertest(catalog,sid) values(#{catalog},#{sid})")

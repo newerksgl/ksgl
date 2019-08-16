@@ -3,35 +3,35 @@ package com.newer.ksgl.model.pojo;
 
 public class Usercertificate {
 
-  private long ucid;
-  private long cid;
-  private long csid;
+  private Long ucid;
+  private Long cid;
+  private Long csid;
   private String name;
 
 
-  public long getUcid() {
+  public Long getUcid() {
     return ucid;
   }
 
-  public void setUcid(long ucid) {
+  public void setUcid(Long ucid) {
     this.ucid = ucid;
   }
 
 
-  public long getCid() {
+  public Long getCid() {
     return cid;
   }
 
-  public void setCid(long cid) {
+  public void setCid(Long cid) {
     this.cid = cid;
   }
 
 
-  public long getCsid() {
+  public Long getCsid() {
     return csid;
   }
 
-  public void setCsid(long csid) {
+  public void setCsid(Long csid) {
     this.csid = csid;
   }
 

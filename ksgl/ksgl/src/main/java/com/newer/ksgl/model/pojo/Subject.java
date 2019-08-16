@@ -3,24 +3,24 @@ package com.newer.ksgl.model.pojo;
 
 public class Subject {
 
-  private long sid;
+  private Long sid;
   private String name;
   private String image;
 
   public Subject() {
   }
 
-  public Subject(long sid, String name, String image) {
+  public Subject(Long sid, String name, String image) {
     this.sid = sid;
     this.name = name;
     this.image = image;
   }
 
-  public long getSid() {
+  public Long getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Long sid) {
     this.sid = sid;
   }
 

@@ -13,7 +13,7 @@ public interface QuestionMapper {
 
     //根据id查询
     @Select("select * from question where qid=#{id}")
-    public Question finById(Long id);
+    public Question getQuestionById(Long id);
 
     //添加数据
     @Insert("insert into question(question,questiontest) values(#{question},#{questiontest})")

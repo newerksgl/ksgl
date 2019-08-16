@@ -3,16 +3,16 @@ package com.newer.ksgl.model.pojo;
 
 public class Question {
 
-  private long qid;
+  private Long qid;
   private String question;
   private String questionTest;
 
 
-  public long getQid() {
+  public Long getQid() {
     return qid;
   }
 
-  public void setQid(long qid) {
+  public void setQid(Long qid) {
     this.qid = qid;
   }
 

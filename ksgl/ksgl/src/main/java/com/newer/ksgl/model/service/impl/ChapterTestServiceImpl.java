@@ -19,8 +19,8 @@ public class ChapterTestServiceImpl implements ChapterTestService {
     }
 
     @Override
-    public Chaptertest findById(Long id) {
-        return mapper.findById(id);
+    public Chaptertest getChapterTestById(Long id) {
+        return mapper.getChapterTestById(id);
     }
 
     @Override

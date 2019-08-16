@@ -3,15 +3,15 @@ package com.newer.ksgl.model.pojo;
 
 public class Ccertificatestatus {
 
-  private long csid;
+  private Long csid;
   private String status;
 
 
-  public long getCsid() {
+  public Long getCsid() {
     return csid;
   }
 
-  public void setCsid(long csid) {
+  public void setCsid(Long csid) {
     this.csid = csid;
   }
 

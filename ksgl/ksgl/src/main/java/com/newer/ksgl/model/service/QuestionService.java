@@ -11,7 +11,7 @@ public interface QuestionService {
     public List<Question> findAll();
 
     //根据id查询
-    public Question finById(Long id);
+    public Question getQuestionById(Long id);
 
     //添加数据
     public void add(Question question);

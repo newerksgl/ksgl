@@ -3,17 +3,17 @@ package com.newer.ksgl.model.pojo;
 
 public class Paper {
 
-  private long pid;
+  private Long pid;
   private String pName;
-  private long sid;
+  private Long sid;
   private String topicsList;
 
 
-  public long getPid() {
+  public Long getPid() {
     return pid;
   }
 
-  public void setPid(long pid) {
+  public void setPid(Long pid) {
     this.pid = pid;
   }
 
@@ -27,11 +27,11 @@ public class Paper {
   }
 
 
-  public long getSid() {
+  public Long getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Long sid) {
     this.sid = sid;
   }
 

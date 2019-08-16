@@ -11,7 +11,7 @@ public interface ChapterTestService {
     public List<Chaptertest> findAll();
 
     //根据id查询
-    public Chaptertest findById(Long id);
+    public Chaptertest getChapterTestById(Long id);
 
     //添加数据
     public void add(Chaptertest chaptertest);

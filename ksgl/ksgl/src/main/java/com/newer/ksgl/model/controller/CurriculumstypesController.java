@@ -54,7 +54,7 @@ public class CurriculumstypesController {
     @ResponseBody
     @RequestMapping("/findById")
     public Curriculumstypes findById(Long id){
-        return service.findById(id);
+        return service.getCurriculumstypesById(id);
     }
 
     //根据id删除数据入口

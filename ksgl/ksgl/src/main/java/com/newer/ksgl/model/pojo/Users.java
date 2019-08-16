@@ -5,16 +5,16 @@ public class Users {
   private String name;
   private String email;
   private String users_ip;
-  private long integral;
+  private Long integral;
   private String register;
   private String password;
-  private long rid;
-  private long pri_id;
+  private Long rid;
+  private Long pri_id;
 
   public Users() {
   }
 
-  public Users(String name, String email, String users_ip, long integral, String register, String password, long rid, long pri_id) {
+  public Users(String name, String email, String users_ip, Long integral, String register, String password, Long rid, Long pri_id) {
     this.name = name;
     this.email = email;
     this.users_ip = users_ip;
@@ -49,11 +49,11 @@ public class Users {
     this.users_ip = users_ip;
   }
 
-  public long getIntegral() {
+  public Long getIntegral() {
     return integral;
   }
 
-  public void setIntegral(long integral) {
+  public void setIntegral(Long integral) {
     this.integral = integral;
   }
 
@@ -73,19 +73,19 @@ public class Users {
     this.password = password;
   }
 
-  public long getRid() {
+  public Long getRid() {
     return rid;
   }
 
-  public void setRid(long rid) {
+  public void setRid(Long rid) {
     this.rid = rid;
   }
 
-  public long getPri_id() {
+  public Long getPri_id() {
     return pri_id;
   }
 
-  public void setPri_id(long pri_id) {
+  public void setPri_id(Long pri_id) {
     this.pri_id = pri_id;
   }
 
