@@ -24,6 +24,7 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
+
     void show(List<Users> ulist){
         for(Users u : ulist){
             System.out.println(u);
