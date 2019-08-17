@@ -18,6 +18,11 @@ public class CertificateServiceImpl implements CertificateService {
     }
 
     @Override
+    public Certificate findById(
+    Long id) {
+        return mapper.findById(id);
+    }
+    @Override
     public Integer add(Certificate cert) {
         return mapper.add(cert);
     }

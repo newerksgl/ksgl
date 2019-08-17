@@ -12,6 +12,10 @@ public interface CertificateMapper {
     @Select("select * from Certificate")
     public List<Certificate> findAll();
 
+    //通过id查询
+    @Select("select * from Certificate where csid = #{id} ")
+    public Certificate findById(Long id);
+
     //添加数据
     @Insert("insert into Certificate(thumnail,title,price,addtime,brief) values(#{thumnail},#{title},#{price},#{addtime},#{brief})")
     public Integer add(Certificate cert);

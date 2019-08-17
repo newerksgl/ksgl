@@ -10,6 +10,9 @@ public interface CertificateService {
     //查询所有
     public List<Certificate> findAll();
 
+    //通过id查询
+    public Certificate findById(Long id);
+
     //添加数据
     public Integer add(Certificate cert);
 
