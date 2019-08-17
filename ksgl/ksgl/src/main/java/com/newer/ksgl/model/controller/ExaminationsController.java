@@ -26,7 +26,6 @@ public class ExaminationsController {
     @RequestMapping("/find")
     public PageBean<Examinations> find(Examinations e,Integer pageNo){
         Integer pageSize = 1;
-        String tableName = "Examinations";
 
         PageBean<Examinations> pageBean = new PageBean<>();
 
