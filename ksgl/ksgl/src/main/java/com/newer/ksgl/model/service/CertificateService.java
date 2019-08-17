@@ -20,6 +20,6 @@ public interface CertificateService {
     public Integer updateById(Certificate cert);
 
     //通过id删除
-    public Integer deleteById(@Param("id") Long id);
+    public Integer deleteById(Long id);
 
 }
