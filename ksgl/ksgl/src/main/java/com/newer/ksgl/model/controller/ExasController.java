@@ -29,7 +29,6 @@ public class ExasController {
     @RequestMapping("/find")
     public PageBean<Exas> find(Exas exas, Integer pageNo){
         Integer pageSize = 1;
-        String tableName = "Exas";
 
         PageBean<Exas> pageBean = new PageBean<>();
 

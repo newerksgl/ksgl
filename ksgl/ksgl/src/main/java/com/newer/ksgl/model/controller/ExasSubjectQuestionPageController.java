@@ -23,7 +23,6 @@ public class ExasSubjectQuestionPageController {
     @RequestMapping("/find")
     public PageBean<ExasSubjectQuestionPage> find(HttpServletRequest request,ExasSubjectQuestionPage page, Integer pageNo){
         Integer pageSize = 1;
-        String tableName = "ExasSubjectQuestionPage";
         PageBean<ExasSubjectQuestionPage> pageBean = new PageBean<>();
         page=new ExasSubjectQuestionPage();
         Integer pageno = 1;
