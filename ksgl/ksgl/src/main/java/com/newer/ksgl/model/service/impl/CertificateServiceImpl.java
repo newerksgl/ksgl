@@ -5,9 +5,11 @@ import com.newer.ksgl.model.pojo.Certificate;
 import com.newer.ksgl.model.pojo.Exas;
 import com.newer.ksgl.model.service.CertificateService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CertificateServiceImpl implements CertificateService {
     @Autowired
     private CertificateMapper mapper;

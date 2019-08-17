@@ -2,9 +2,11 @@ package com.newer.ksgl.model.service;
 
 import com.newer.ksgl.model.pojo.Certificate;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface CertificateService {
 
     //查询所有
