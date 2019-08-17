@@ -16,6 +16,26 @@ public interface CertificateMapper {
     @Select("select * from Certificate where csid = #{id} ")
     public Certificate findById(Long id);
 
+    //分页多样查询
+    @Select("<script>" + "select * from certificate where 1=1 " +
+            "<if test='c.thumbnail!=null'> and thumbnail like #{e.thumbnail}</if> " +
+            "<if test='c.title!=null'>and title like #{c.title}</if> " +
+            "<if test='c.price!=null'>and price like #{c.price}</if>" +
+            "<if test='c.addtime!=null'>and addtime like #{c.addtime}</if>" +
+            "<if test='c.brief!=null'>and brief like #{c.brief}</if>" +
+            "limit #{row},#{pageSize}</script>")
+    public List<Certificate> find(@Param("c") Certificate cert, @Param("row") Integer row, @Param("pageSize") Integer pageSize);
+
+    //查询总数据行数
+    @Select("<script>" + "select count(*) from certificate where 1=1 " +
+            "<if test='c.thumbnail!=null'> and thumbnail like #{e.thumbnail}</if> " +
+            "<if test='c.title!=null'>and title like #{c.title}</if> " +
+            "<if test='c.price!=null'>and price like #{c.price}</if>" +
+            "<if test='c.addtime!=null'>and addtime like #{c.addtime}</if>" +
+            "<if test='c.brief!=null'>and brief like #{c.brief}</if>" +
+            "limit #{row},#{pageSize}</script>")
+    public Integer findRowCount(@Param("c") Certificate cert);
+
     //添加数据
     @Insert("insert into Certificate(thumnail,title,price,addtime,brief) values(#{thumnail},#{title},#{price},#{addtime},#{brief})")
     public Integer add(Certificate cert);
