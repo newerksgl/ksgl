@@ -15,7 +15,7 @@ public interface ExasSubjectQuestionPageMapper {
             "select * from exas e inner join `subject` s on e.SID=s.SID inner join question q on e.QID=q.QID where 1=1 " +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
-            "<if test='p.questionstem!=null'> and e.Question_Stem like #{p.questionstem}</if> " +
+            "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +
             "<if test='p.reference!=null'>and e.Reference like #{p.reference}</if> " +
             "<if test='p.problem!=null'>and e.problem like #{p.problem}</if>" +
             "<if test='p.difficulty!=null'>and e.difficulty like #{p.difficulty}</if>" +
@@ -30,7 +30,7 @@ public interface ExasSubjectQuestionPageMapper {
             " limit #{row},#{pageSize}</script>")
     @Results(value = {
             @Result(id = true,column = ("eid"),property = "eid"),
-            @Result(column = "question_stem",property = "questionStem"),
+            @Result(column = "questionstem",property = "questionStem"),
             @Result(column = "reference",property = "reference"),
             @Result(column = "problem",property = "problem"),
             @Result(column = "difficulty",property = "difficulty"),
@@ -46,7 +46,7 @@ public interface ExasSubjectQuestionPageMapper {
             "select count(*) from exas e inner join `subject` s on e.SID=s.SID inner join question q on e.QID=q.QID where 1=1" +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
-            "<if test='p.questionstem!=null'> and e.Question_Stem like #{p.questionstem}</if> " +
+            "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +
             "<if test='p.reference!=null'>and e.Reference like #{p.reference}</if> " +
             "<if test='p.problem!=null'>and e.problem like #{p.problem}</if>" +
             "<if test='p.difficulty!=null'>and e.difficulty like #{p.difficulty}</if>" +

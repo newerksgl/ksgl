@@ -22,7 +22,7 @@ public class ExasSubjectQuestionPageController {
     @ResponseBody
     @RequestMapping("/find")
     public PageBean<ExasSubjectQuestionPage> find(HttpServletRequest request,ExasSubjectQuestionPage page, Integer pageNo){
-        Integer pageSize = 1;
+        Integer pageSize = 30;
         PageBean<ExasSubjectQuestionPage> pageBean = new PageBean<>();
         page=new ExasSubjectQuestionPage();
         Integer pageno = 1;
@@ -44,7 +44,6 @@ public class ExasSubjectQuestionPageController {
         try {
             page.setQid(Long.valueOf(request.getParameter("qid")));
         }catch (NumberFormatException e){}
-        System.out.println(page.getDate());
         if(pageNo!=null && pageNo>0){
             pageno = pageNo;
         }

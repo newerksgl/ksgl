@@ -17,6 +17,10 @@ public class ExaminationsSubjectRegionPageController {
     @ResponseBody
     @RequestMapping("/find")
     public PageBean<ExaminationsSubjectRegionPage> find(ExaminationsSubjectRegionPage page,Integer pageNo){
+        System.out.println(page);
+        if (page.getStatetest()==""){
+            page.setStatetest(null);
+        }
         Integer pageSize = 1;
 
         PageBean<ExaminationsSubjectRegionPage> pageBean = new PageBean<>();

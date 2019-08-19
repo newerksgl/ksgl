@@ -26,6 +26,6 @@ public interface ExasMapper extends ExasMapperImpl {
     public void updateById(@Param("sid") Long sid, @Param("qid") Long qid, @Param("e") Exas e);
 
     //进行添加数据
-    @Insert("insert into exas(SID,QID,question_stem,reference,problem,difficulty,date) values(#{sid},#{qid},#{e.questionStem},#{e.reference},#{e.problem},#{e.difficulty},SYSDATE())")
+    @Insert("insert into exas(SID,QID,questionstem,reference,problem,difficulty,date) values(#{sid},#{qid},#{e.questionStem},#{e.reference},#{e.problem},#{e.difficulty},SYSDATE())")
     public void add(@Param("sid") Long sid, @Param("qid") Long qid, @Param("e") Exas e);
 }
