@@ -5,18 +5,16 @@ import com.newer.ksgl.model.pojo.Certificate;
 import com.newer.ksgl.model.pojo.pojopage.UsercertificatePage;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 @Mapper
 public interface UsercertificatePageMapper {
-    @Select("select * from Usercertificate")
+    @Select("select * from Usercertificate where name = #{name}")
     @Results({
             @Result(property = "ucid", column = "ucid"),
-            @Result(property ="certificate",column="cid",one = @One(select = "com.newer.ksgl.model.mapper.UsercertificatePageMapper.getCertificate")),
-            @Result(property = "ccertificatestatus",column = "csid",one = @One(select = "com.newer.ksgl.model.mapper.UsercertificatePageMapper.getCertificatestatus")),
+            @Result(property ="certificate",column="cid",one = @One(select = "com.newer.ksgl.model.mapper.CertificateMapper.getCertificate")),
+            @Result(property = "ccertificatestatus",column = "csid",one = @One(select = "com.newer.ksgl.model.mapper.CcertificatestatusMapper.findById")),
             @Result(property = "name",column = "name")
     })
-    UsercertificatePage selectAll();
-    @Select("select * from Certificate where cid = #{cid}")
-    Certificate getCertificate(@Param("cid") long cid);
-    @Select("select * from Ccertificatestatus where csid = #{csid}")
-    Ccertificatestatus getCertificatestatus(@Param("csid") long csid);
+    List<UsercertificatePage> selectAll(@Param("name")String name);
 }
