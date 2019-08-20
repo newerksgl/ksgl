@@ -27,4 +27,7 @@ public interface ExaminationsService {
 
     //查询总数据行数
     public Integer findRowCount(Examinations e);
+
+    //通过id开通考场
+    public void kaiTong(Long id);
 }

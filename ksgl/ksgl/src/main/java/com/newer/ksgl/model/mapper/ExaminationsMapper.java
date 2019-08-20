@@ -26,4 +26,8 @@ public interface ExaminationsMapper extends ExaminationsMapperImpl {
     //根据id删除数据
     @Delete("delete from examinations where id = #{id}")
     public void del(Long id);
+
+    //通过id开通考场
+    @Update("update examinations set statetest='开通' where id=#{id}")
+    public void kaiTong(Long id);
 }

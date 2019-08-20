@@ -1,6 +1,7 @@
 package com.newer.ksgl.model.controller;
 
 import com.newer.ksgl.model.pojo.Users;
+import com.newer.ksgl.model.service.PrivacyService;
 import com.newer.ksgl.model.service.UsersService;
 import com.newer.ksgl.model.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,8 @@ public class UsersController {
 
     @Autowired
     private UsersService usersService;
+    @Autowired
+    private PrivacyService privacyService;
 
 
     void show(List<Users> ulist){
@@ -68,7 +71,8 @@ public class UsersController {
     @ResponseBody
     @RequestMapping(value = "/delete",produces = "text/plain;charset=UTF-8")
     Integer delete(Integer priId){
-        Integer row = usersService.deleteById(priId);
+        Integer row =privacyService.deleteById(priId);
+        row = usersService.deleteById(priId);
         return row;
     }
 

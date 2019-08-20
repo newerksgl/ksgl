@@ -48,4 +48,9 @@ public class ExaminationsServiceImpl implements ExaminationsService {
         return mapper.findRowCount(e);
     }
 
+    @Override
+    public void kaiTong(Long id) {
+        mapper.kaiTong(id);
+    }
+
 }

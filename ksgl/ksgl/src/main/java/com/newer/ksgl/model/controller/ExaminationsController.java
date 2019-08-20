@@ -70,4 +70,15 @@ public class ExaminationsController {
         return 1;
     }
 
+    @ResponseBody
+    @RequestMapping("/kaiTong")
+    public Integer kaiTong(Long id){
+        try{
+            service.kaiTong(id);
+        }catch (Exception e){
+            return 0;
+        }
+        return 1;
+    }
+
 }
