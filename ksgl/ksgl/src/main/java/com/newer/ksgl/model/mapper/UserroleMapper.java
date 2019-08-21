@@ -17,7 +17,7 @@ public interface UserroleMapper {
      * @param userrole 角色类
      * @return Integer
      * */
-    @Insert("insert into userrole values(null,#{rolename},#{defaultrole},#{description},#{isadmin})")
+    @Insert("insert into userrole values(null,#{role_name},#{defaultrole},#{description},#{isadmin})")
     Integer insert(Userrole userrole);
 
     /**

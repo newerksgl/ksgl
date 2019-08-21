@@ -44,6 +44,9 @@ public class ExasSubjectQuestionPageController {
         try {
             page.setQid(Long.valueOf(request.getParameter("qid")));
         }catch (NumberFormatException e){}
+        try {
+            page.setEid(Long.valueOf(request.getParameter("eid")));
+        }catch (NumberFormatException e){}
         if(pageNo!=null && pageNo>0){
             pageno = pageNo;
         }

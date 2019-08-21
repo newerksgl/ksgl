@@ -16,11 +16,11 @@ public interface RegionMapper {
     public Region findById(Long reid);
 
     //添加数据
-    @Insert("insert into region(name,areacode) values(#{name},#{areacode})")
+    @Insert("insert into region(name,areacode) values(#{name},#{areaCode})")
     public void add(Region region);
 
     //通过id修改数据
-    @Update("update region set name=#{name},areacode=#{areacode} where reid=#{reid}")
+    @Update("update region set name=#{name},areacode=#{areaCode} where reid=#{reid}")
     public void updateById(Region region);
 
     //根据id删除

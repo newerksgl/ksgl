@@ -46,8 +46,11 @@ public class UserroleController {
     @ResponseBody
     @RequestMapping("/deleteById")
     Integer deleteById(Integer rid){
-        Integer row = userroleService.deleteById(rid);
-        return row;
+        try {
+            return userroleService.deleteById(rid);
+        }catch (Exception e) {
+            return 2;
+        }
     }
 
     /**

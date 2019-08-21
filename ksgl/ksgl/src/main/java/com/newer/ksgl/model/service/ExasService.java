@@ -24,4 +24,6 @@ public interface ExasService {
     public List<Exas> find(Exas exas,Integer rows,Integer pageSize);
     //查询总数据行数
     public Integer findRowCount( Exas exas);
+    //对难度进行查询
+    public List<String> findDiff();
 }

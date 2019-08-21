@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping("region")
+@RequestMapping("/region")
 public class RegionController {
     @Autowired
     private RegionService service;

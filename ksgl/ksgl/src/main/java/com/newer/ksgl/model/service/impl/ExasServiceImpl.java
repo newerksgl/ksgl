@@ -48,4 +48,9 @@ public class ExasServiceImpl implements ExasService {
     public Integer findRowCount(Exas exas) {
         return mapper.findRowCount(exas);
     }
+
+    @Override
+    public List<String> findDiff() {
+        return mapper.findDiff();
+    }
 }

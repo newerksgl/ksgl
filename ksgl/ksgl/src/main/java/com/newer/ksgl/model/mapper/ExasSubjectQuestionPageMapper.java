@@ -13,6 +13,7 @@ public interface ExasSubjectQuestionPageMapper {
     //表连接多样查询分页
     @Select("<script>" +
             "select * from exas e inner join `subject` s on e.SID=s.SID inner join question q on e.QID=q.QID where 1=1 " +
+            "<if test='p.eid!=null'>and e.eid=#{p.eid}</if>" +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
             "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +
@@ -44,6 +45,7 @@ public interface ExasSubjectQuestionPageMapper {
     //表连接查询总数据行数
     @Select("<script>" +
             "select count(*) from exas e inner join `subject` s on e.SID=s.SID inner join question q on e.QID=q.QID where 1=1" +
+            "<if test='p.eid!=null'>and e.eid=#{p.eid}</if>" +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
             "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +

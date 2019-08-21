@@ -88,4 +88,11 @@ public class ExasController {
         }
         return 1;
     }
+
+    //查询所有难度入口
+    @ResponseBody
+    @RequestMapping("/findDiff")
+    public List<String> findDiff(){
+        return service.findDiff();
+    }
 }
