@@ -22,7 +22,7 @@ public interface ExasMapper extends ExasMapperImpl {
     public Exas getExasById(@Param("id") Long id);
 
     //通过id进行修改
-    @Update("update exas set SID=#{sid},QID=#{qid},Quetion_Stem=#{e.questionStem},Reference=#{e.reference},Problem=#{e.problem},Difficulty=#{e.difficulty} where eid=#{e.eid}")
+    @Update("update exas set SID=#{sid},QID=#{qid},QuestionStem=#{e.questionStem},Reference=#{e.reference},Problem=#{e.problem},Difficulty=#{e.difficulty} where eid=#{e.eid}")
     public void updateById(@Param("sid") Long sid, @Param("qid") Long qid, @Param("e") Exas e);
 
     //进行添加数据

@@ -45,19 +45,12 @@ public class UsersController {
     @ResponseBody
     @RequestMapping(value = "/insert")
     // produces = "text/plain;charset=UTF-8"
-    Integer insert(String name,String email,String pass) throws Exception{
+    Integer insert(Users users) throws Exception{
         InetAddress addr = InetAddress.getLocalHost();
         String ip = addr.getHostAddress();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String datetime = sdf.format(new Date());
-
-        Users users = new Users();
-        users.setName(name);
-        users.setEmail(email);
-        users.setUsers_ip(ip);
         users.setRegister(datetime);
-        users.setPassword(pass);
-        users.setRid(2l);
         Integer row = usersService.insert(users);
         return row;
     }

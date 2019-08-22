@@ -13,7 +13,7 @@ public interface ExasMapperImpl {
     //多样查询分页
     @Select("<script>" +
             "select * from exas where 1=1 " +
-            "<if test='e.questionstem!=null'> and QuestionStem like #{e.questionstem}</if> " +
+            "<if test='e.questionStem!=null'> and QuestionStem like #{e.questionStem}</if> " +
             "<if test='e.reference!=null'>and Reference like #{e.reference}</if> " +
             "<if test='e.problem!=null'>and problem like #{e.problem}</if>" +
             "<if test='e.difficulty!=null'>and difficulty like #{e.difficulty}</if>" +
@@ -26,7 +26,7 @@ public interface ExasMapperImpl {
     //查询总数据行数
     @Select("<script>" +
             "select count(*) from exas where 1=1 " +
-            "<if test='e.questionstem!=null'> and QuestionStem like #{e.questionstem}</if> " +
+            "<if test='e.questionStem!=null'> and QuestionStem like #{e.questionStem}</if> " +
             "<if test='e.reference!=null'>and Reference like #{e.reference}</if> " +
             "<if test='e.problem!=null'>and problem like #{e.problem}</if>" +
             "<if test='e.difficulty!=null'>and difficulty like #{e.difficulty}</if>" +

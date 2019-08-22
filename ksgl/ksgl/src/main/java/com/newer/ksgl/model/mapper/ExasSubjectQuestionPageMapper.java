@@ -16,7 +16,7 @@ public interface ExasSubjectQuestionPageMapper {
             "<if test='p.eid!=null'>and e.eid=#{p.eid}</if>" +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
-            "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +
+            "<if test='p.questionStem!=null'> and e.QuestionStem like #{p.questionStem}</if> " +
             "<if test='p.reference!=null'>and e.Reference like #{p.reference}</if> " +
             "<if test='p.problem!=null'>and e.problem like #{p.problem}</if>" +
             "<if test='p.difficulty!=null'>and e.difficulty like #{p.difficulty}</if>" +
@@ -48,7 +48,7 @@ public interface ExasSubjectQuestionPageMapper {
             "<if test='p.eid!=null'>and e.eid=#{p.eid}</if>" +
             "<if test='p.qid!=null'>and e.qid=#{p.qid}</if>" +
             "<if test='p.sid!=null'>and e.sid=#{p.sid}</if>" +
-            "<if test='p.questionstem!=null'> and e.QuestionStem like #{p.questionstem}</if> " +
+            "<if test='p.questionStem!=null'> and e.QuestionStem like #{p.questionStem}</if> " +
             "<if test='p.reference!=null'>and e.Reference like #{p.reference}</if> " +
             "<if test='p.problem!=null'>and e.problem like #{p.problem}</if>" +
             "<if test='p.difficulty!=null'>and e.difficulty like #{p.difficulty}</if>" +

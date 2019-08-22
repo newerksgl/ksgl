@@ -18,7 +18,7 @@ public interface UsersMapper {
      * @param users 用户类
      * @return Integer
      * */
-    @Insert("insert into users values(#{name},#{email},#{users_ip},#{integral},#{register},#{password},#{rid},null)")
+    @Insert("insert into users(name,email,users_ip,integral,register,password,rid) values(#{name},#{email},#{users_ip},#{integral},#{register},#{password},#{rid})")
     Integer insert(Users users);
 
     /**

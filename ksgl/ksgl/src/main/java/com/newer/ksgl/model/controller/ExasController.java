@@ -81,6 +81,7 @@ public class ExasController {
     @ResponseBody
     @RequestMapping("/update")
     public Integer update(Exas exas){
+        System.out.println(exas);
         try {
             service.updateById(exas.getSid(),exas.getQid(),exas);
         }catch (Exception e){

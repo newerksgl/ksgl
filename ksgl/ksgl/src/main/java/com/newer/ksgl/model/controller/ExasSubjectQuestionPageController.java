@@ -35,7 +35,7 @@ public class ExasSubjectQuestionPageController {
         page.setQ(q);
         page.setReference(request.getParameter("reference"));
         page.setDifficulty(request.getParameter("difficulty"));
-        page.setQuestionStem(request.getParameter("questionstem"));
+        page.setQuestionStem(request.getParameter("questionStem"));
         page.setProblem(request.getParameter("problem"));
         page.setDate(request.getParameter("date"));
         try {

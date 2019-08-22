@@ -11,6 +11,19 @@ public class Exas {
   private Long eid;
   private String date;
 
+  @Override
+  public String toString() {
+    return "Exas{" +
+            "sid=" + sid +
+            ", qid=" + qid +
+            ", questionStem='" + questionStem + '\'' +
+            ", reference='" + reference + '\'' +
+            ", problem='" + problem + '\'' +
+            ", difficulty='" + difficulty + '\'' +
+            ", eid=" + eid +
+            ", date='" + date + '\'' +
+            '}';
+  }
 
   public Long getSid() {
     return sid;
