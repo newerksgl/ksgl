@@ -20,7 +20,7 @@ public class ExaminationsSubjectRegionPageController {
         if (page.getStatetest()==""){
             page.setStatetest(null);
         }
-        Integer pageSize = 1;
+        Integer pageSize = 30;
 
         PageBean<ExaminationsSubjectRegionPage> pageBean = new PageBean<>();
 
