@@ -71,10 +71,10 @@ public class SubjectController {
     public Integer add(HttpServletRequest request, @RequestParam("image") MultipartFile file) {
         try {
             byte[] bytes = file.getBytes();
-            Path path = Paths.get("ksgl/src/main/resources/static/image", file.getOriginalFilename());
+            Path path = Paths.get("G:/myproject1/ksgl/ksgl/ksgl/src/main/resources/static/image", file.getOriginalFilename());
             //如果没有files文件夹，则创建
             if (!Files.isWritable(path)) {
-                Files.createDirectories(Paths.get("ksgl/src/main/resources/static/image"));
+                Files.createDirectories(Paths.get("G:/myproject1/ksgl/ksgl/ksgl/src/main/resources/static/image"));
             }
             //文件写入指定路径
             Files.write(path, bytes);
@@ -87,7 +87,6 @@ public class SubjectController {
             subject.setImage("http://"+address.getHostAddress()+":9999/image/"+file.getOriginalFilename());
             System.out.println(subject);
             service.add(subject);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -113,10 +112,10 @@ public class SubjectController {
     public Integer update(HttpServletRequest request, @RequestParam("image") MultipartFile file) {
         try {
             byte[] bytes = file.getBytes();
-            Path path = Paths.get("ksgl/src/main/resources/static/image", file.getOriginalFilename());
+            Path path = Paths.get("G:/myproject1/ksgl/ksgl/ksgl/src/main/resources/static/image", file.getOriginalFilename());
             //如果没有files文件夹，则创建
             if (!Files.isWritable(path)) {
-                Files.createDirectories(Paths.get("ksgl/src/main/resources/static/image"));
+                Files.createDirectories(Paths.get("G:/myproject1/ksgl/ksgl/ksgl/src/main/resources/static/image"));
             }
             //文件写入指定路径
             Files.write(path, bytes);

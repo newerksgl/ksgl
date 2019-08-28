@@ -76,23 +76,8 @@ public class CurriculumstypesController {
     //添加数据入口
     @ResponseBody
     @RequestMapping("/add")
-    public Integer add(HttpServletRequest request,@RequestParam("image") MultipartFile file){
+    public Integer add(Curriculumstypes curriculumstypes){
         try {
-            byte[] bytes = file.getBytes();
-            Path path = Paths.get("ksgl/src/main/resources/static/image", file.getOriginalFilename());
-            //如果没有files文件夹，则创建
-            if (!Files.isWritable(path)) {
-                Files.createDirectories(Paths.get("ksgl/src/main/resources/static/image"));
-            }
-            //文件写入指定路径
-            Files.write(path, bytes);
-            Curriculumstypes curriculumstypes = new Curriculumstypes();
-            curriculumstypes.setCtid(Long.parseLong(request.getParameter("ctid")));
-            curriculumstypes.setAddress(request.getParameter("address"));
-            curriculumstypes.setTitle(request.getParameter("title"));
-            curriculumstypes.setIntroduce(request.getParameter("introduce"));
-            InetAddress address = InetAddress.getLocalHost();
-            curriculumstypes.setImage("http://"+address.getHostAddress()+":9999/image/"+file.getOriginalFilename());
             service.add(curriculumstypes);
         }catch (Exception e){
             return 0;
