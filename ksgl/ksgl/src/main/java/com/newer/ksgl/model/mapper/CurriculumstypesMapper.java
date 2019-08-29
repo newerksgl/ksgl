@@ -17,7 +17,7 @@ public interface CurriculumstypesMapper extends CurriculumstypesMapperImpl {
     public Curriculumstypes getCurriculumstypesById(Long id);
 
     //添加数据
-    @Insert("inser into curriculumstypes(ctid,title,image,address,introduce) values(#{ctid},#{title},#{image},#{address},#{introduce})")
+    @Insert("insert into curriculumstypes(ctid,title,image,address,introduce) values(#{ctid},#{title},#{image},#{address},#{introduce})")
     public void add(Curriculumstypes curriculumstypes);
 
     //通过id修改数据

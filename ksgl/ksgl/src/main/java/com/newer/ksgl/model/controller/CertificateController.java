@@ -1,8 +1,12 @@
 package com.newer.ksgl.model.controller;
 
+import com.newer.ksgl.model.mapper.CertificateMapperImpl;
 import com.newer.ksgl.model.pojo.Certificate;
 import com.newer.ksgl.model.pojo.Chaptertest;
+import com.newer.ksgl.model.pojo.Usercertificate;
 import com.newer.ksgl.model.service.CertificateService;
+import com.newer.ksgl.model.service.UsercertififcatePageService;
+import com.newer.ksgl.model.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +20,9 @@ public class CertificateController {
 
     @Autowired
     private CertificateService service;
+    private UsersService usersService;
+    private UsercertififcatePageService usercertififcatePageService;
+    private CertificateMapperImpl certificateMapper;
 
     //查询所有数据入口
     @ResponseBody
@@ -66,6 +73,27 @@ public class CertificateController {
         }
         return 1;
     }
+    @ResponseBody
+    @RequestMapping("/intertu")
+    public  String instertu(Long id,String name){
+        if(usersService.selectByNameU(name).getIntegral()>= service.findById(id).getPrice()){
+            Usercertificate usercertificate = new Usercertificate();
+            usercertificate.setCid(id);
+            usercertificate.setCsid(1l);
 
-
+            usercertificate.setName(name);
+            if(1<=usercertififcatePageService.insert(usercertificate)){
+                return "申请成功";
+            }else{
+                return "申请失败";
+            }
+        }else {
+            return "积分不足";
+        }
+    }
+    @ResponseBody
+    @RequestMapping("/selecbyname")
+    public  List<Certificate> selectbyname(String name){
+        return certificateMapper.selectByName(name);
+    }
 }
