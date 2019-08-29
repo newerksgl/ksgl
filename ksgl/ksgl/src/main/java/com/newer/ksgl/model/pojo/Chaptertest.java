@@ -15,7 +15,6 @@ public class Chaptertest {
     this.ctid = ctid;
   }
 
-
   public String getCatalog() {
     return catalog;
   }
