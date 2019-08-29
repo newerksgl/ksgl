@@ -1,6 +1,7 @@
 package com.newer.ksgl.model.service.impl;
 
 import com.newer.ksgl.model.mapper.UsercertificatePageMapper;
+import com.newer.ksgl.model.pojo.Usercertificate;
 import com.newer.ksgl.model.pojo.pojopage.UsercertificatePage;
 import com.newer.ksgl.model.service.UsercertififcatePageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,5 +16,10 @@ public class UsercertififcatePageServiceImpl implements UsercertififcatePageServ
     @Override
     public List<UsercertificatePage> selectname(String name) {
         return mapper.selectAll(name);
+    }
+
+    @Override
+    public int insert(Usercertificate usercertificate) {
+        return mapper.insert(usercertificate);
     }
 }

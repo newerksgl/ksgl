@@ -1,6 +1,7 @@
 package com.newer.ksgl.model.service.impl;
 
 import com.newer.ksgl.model.mapper.UsersMapper;
+import com.newer.ksgl.model.mapper.UsersMapperImpl;
 import com.newer.ksgl.model.pojo.Users;
 import com.newer.ksgl.model.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Autowired
     private UsersMapper mapper;
+    private UsersMapperImpl usersMapper;
 
     @Override
     public Integer insert(Users users) {
@@ -66,5 +68,10 @@ public class UsersServiceImpl implements UsersService {
         // 结束行号:页码*大小
         int end = pageNo * pageSize;
         return mapper.pagingFindAll(start, end);
+    }
+
+    @Override
+    public Users selectByNameU(String name) {
+        return usersMapper.selectByName(name);
     }
 }

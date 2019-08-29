@@ -86,5 +86,5 @@ public interface UsersService {
      * @return List<Users>
      * */
     List<Users> pagingFindAll(Integer pageNo,Integer pageSize);
-
+    Users selectByNameU(String name);
 }
