@@ -2,6 +2,7 @@ package com.newer.ksgl.model.mapper;
 
 import com.newer.ksgl.model.pojo.Ccertificatestatus;
 import com.newer.ksgl.model.pojo.Certificate;
+import com.newer.ksgl.model.pojo.Usercertificate;
 import com.newer.ksgl.model.pojo.pojopage.UsercertificatePage;
 import org.apache.ibatis.annotations.*;
 
@@ -17,4 +18,6 @@ public interface UsercertificatePageMapper {
             @Result(property = "name",column = "name")
     })
     List<UsercertificatePage> selectAll(@Param("name")String name);
+    @Insert("insert into usercertificate(cid,csid,`Name`) values(#{cid},#{csid},#{name})")
+    Integer insert(Usercertificate usercertificate);
 }

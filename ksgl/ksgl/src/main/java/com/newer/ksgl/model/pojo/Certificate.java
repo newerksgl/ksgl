@@ -5,7 +5,7 @@ public class Certificate {
   private Long cid;
   private String thumbnail;
   private String title;
-  private double price;
+  private Double price;
   private java.sql.Timestamp addtime;
   private String brief;
 
@@ -37,11 +37,11 @@ public class Certificate {
   }
 
 
-  public double getPrice() {
+  public Double getPrice() {
     return price;
   }
 
-  public void setPrice(double price) {
+  public void setPrice(Double price) {
     this.price = price;
   }
 
