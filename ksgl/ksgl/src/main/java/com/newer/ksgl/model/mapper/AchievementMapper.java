@@ -21,7 +21,7 @@ public interface AchievementMapper {
     public Integer add(Achievement ach);
 
     // 通过id修改数据
-    @Update("update Achievement set pid=#{pid}, name=#{name}, fraction#{fraction}, pname=#{pname} where aid=#{aid}")
+    @Update("update Achievement set pid=#{pid}, name=#{name}, fraction#{fraction}, pname=#{pName} where aid=#{aid}")
     public Integer updateById(Achievement ach);
 
     // 通过id删除数据
